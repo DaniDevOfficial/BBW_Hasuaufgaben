@@ -6,9 +6,7 @@ function fibonacci(n) {
     }
   }
   
-  const value = 10;
-  console.log(`First ${value}  Fibonacci numbers: `);
-  for (let i = 0; i < value; i++) {
-    console.log(fibonacci(i));
-  }
-  
+  const value = 1;
+  console.log(fibonacci(3));
+
+

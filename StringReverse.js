@@ -6,6 +6,6 @@ function reverseString(str) {
   }
 }
 
-const input = "Hello World"
+const input = "123"
 const reversed = reverseString(input);
-console.log("Reversed string:", reversed);
+console.log(reversed);
