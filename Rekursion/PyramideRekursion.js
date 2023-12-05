@@ -17,8 +17,6 @@ function reversePyramid(width) {
   }
 
 }
-for (i = 0; i < 10000; i++){
 
-}
 Pyramid(val)
 reversePyramid(val)

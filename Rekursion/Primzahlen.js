@@ -1,25 +1,27 @@
-function nextNumber(n, current = 2, primes = []) {
-    if (current > n) {
-      return primes;
-    }
-  
-    let isPrime = true;
-    for (let i = 2; i <= Math.sqrt(current); i++) {
-      if (current % i === 0) {
-        isPrime = false;
-        break;
-      }
-    }
-  
-    if (isPrime) {
-      primes.push(current);
-    }
-  
-    return nextNumber(n, current + 1, primes);
+let Primes = []
+function nextNumber(n, primes = []) {
+  if (n == 1) {
+    return [1, ...primes];
   }
-  
-  const n = 50;
-  const primeNumbers = nextNumber(n);
-  
-  console.log(primeNumbers);
-  
+
+  if (checkIfPrime(n, n))
+    return [...nextNumber(n - 1, primes), n];
+  return nextNumber(n - 1, primes);
+}
+
+function checkIfPrime(n, current) {
+  if (n == current) {
+    return checkIfPrime(n - 1, current)
+  }
+  if (n === 1) {
+    return true;
+  }
+  if (current % n === 0) {
+    return false;
+  }
+  return checkIfPrime(n - 1, current);
+}
+const n = 10;
+const primeNumbers = nextNumber(n);
+
+console.log(primeNumbers);
