@@ -76,9 +76,9 @@
    ```
 
    - **Input:** Liste von Strings (`names`).
-   - **Schritt 1 (`filter`):** Filtert Namen mit einer Länge größer als 3.
-   - **Schritt 2 (`map`):** Wandelt jeden verbleibenden Namen in Großbuchstaben um.
+   - **Schritt 1 (`filter`):** Filtert Namen mit einer Länge grösser als 3.
+   - **Schritt 2 (`map`):** Wandelt jeden verbleibenden Namen in Grossbuchstaben um.
    - **Schritt 3 (`collect`):** Sammelt die verarbeiteten Namen in einer Liste.
-   - **Output:** Liste von Namen mit einer Länge größer als 3, in Großbuchstaben.
+   - **Output:** Liste von Namen mit einer Länge grösser als 3, in Grossbuchstaben.
 
 Dieses Beispiel zeigt die Verwendung von `filter`, `map` und `collect` in einem Stream, um eine Liste von Namen zu filtern und zu transformieren. Es ist wichtig, jeden Schritt im Stream zu verstehen, um die Gesamtfunktionalität zu begreifen.
