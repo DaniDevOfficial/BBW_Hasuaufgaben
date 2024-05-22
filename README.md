@@ -9,3 +9,4 @@
 
 ### M324
 - [x]  [DevOps Platformnen](M324/DevOpsPlatforms/Devops.md) 
+- [ ]  [DevOps Platformen Anewnden](M324/DevOpsPlatforment%20Anwenden/DevopsPlatformAnwenden.md)
